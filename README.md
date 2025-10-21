@@ -85,7 +85,19 @@ All completely **offline-capable** (LLM via local Ollama) and optimized for **Sp
 ---
 
 ## 🧰 Requirements
+3️⃣ Pull a Language Model
+ollama pull llama3.1
 
+
+You can also try smaller models like:
+
+ollama pull mistral
+
+4️⃣ Verify Installation
+ollama run llama3.1 "Write a short Urdu headline about artificial intelligence."
+
+
+If you get a valid Urdu response, Ollama is ready.
 ### Python Dependencies
 Install all required packages:
 ```bash
