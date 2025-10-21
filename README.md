@@ -85,6 +85,25 @@ All completely **offline-capable** (LLM via local Ollama) and optimized for **Sp
 ---
 
 ## 🧰 Requirements
+1️⃣ Install Python Packages
+pip install requests feedparser moviepy pillow pydub numpy edge-tts pyttsx3
+conda install -c conda-forge ffmpeg -y
+
+2️⃣ Install and Run Ollama
+
+Ollama provides the local language model used for Urdu script generation.
+
+For macOS / Linux:
+
+curl -fsSL https://ollama.com/install.sh | sh
+
+
+For Windows:
+
+Download the installer from https://ollama.ai/download
+
+Run Ollama once (it will start a local API server on port 11434)
+
 3️⃣ Pull a Language Model
 ollama pull llama3.1
 
@@ -95,9 +114,6 @@ ollama pull mistral
 
 4️⃣ Verify Installation
 ollama run llama3.1 "Write a short Urdu headline about artificial intelligence."
-
-
-If you get a valid Urdu response, Ollama is ready.
 ### Python Dependencies
 Install all required packages:
 ```bash
